@@ -26,7 +26,7 @@
 }
 
 
-.eletric {
+.electric {
     background-color: #F7CF2E;
 }
 
@@ -161,6 +161,7 @@
     border: none;
     border-radius: 1rem;
     color: #FFF;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 380px) {
