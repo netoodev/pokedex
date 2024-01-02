@@ -102,19 +102,35 @@
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
+    background-image: url('./../images/pokeball-bg.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position:  bottom -15px right -10px;
+    background-origin: padding-box;
+    background-blend-mode: soft-light;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.pokemon:hover {
+    transform: scale(1.1);
 }
 
 .pokemon .number {
     color: #000;
-    opacity: .3;
+    opacity: .2;
     text-align: right;
-    font-size: .625rem;
+    font-size: .9rem;
+    font-weight: 700;
 }
 
 .pokemon .name {
     color: #fff;
     margin-bottom: .25rem;
     text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 .pokemon .detail {
@@ -142,7 +158,6 @@
 .pokemon .detail img {
     max-width: 100%;
     height: 70px;
-    align-self: flex-end
 }
 
 .pagination {
@@ -164,19 +179,31 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 511px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
     }
+
+    .pokemon {
+        width: auto;
+    }
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 753px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .pokemon {
+        width: auto;
     }
 }
 
 @media screen and (min-width: 992px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .pokemon {
+        width: auto;
     }
 }

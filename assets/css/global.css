@@ -4,7 +4,10 @@
 }
 
 body {
-    background-color: #F6F8FC;
+    background-color: #f6f8fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content {
