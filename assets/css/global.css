@@ -15,6 +15,40 @@ body {
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content header > h1 {
+    color: #343434;
+    margin-left: .5rem;
+}
+
+.content header > h1 img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.menu {
+    width: 24px;
+    height: 24px;
+    margin-right: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.menu .line {
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #343434;
 }
 
 @media screen and (min-width: 992px) {
