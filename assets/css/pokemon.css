@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #46D1B2;
+}
+
+.normal {
+    background-color: #A6A877;
+}
+
+
+.grass {
+    background-color: #46D1B2;
+}
+
+
+.fire {
+    background-color:  #FB6C6C;
+}
+
+
+.water {
+    background-color: #77BEFE;
+}
+
+
+.electric {
+    background-color: #FFD970;
+}
+
+
+.ice {
+    background-color: #98D5D7;
+}
+
+
+.ground {
+    background-color: #DFBF69;
+}
+
+
+.flying {
+    background-color: #A98FF0;
+}
+
+
+.poison {
+    background-color: #A040A0;
+}
+
+
+.fighting {
+    background-color: #BF3029;
+}
+
+
+.psychic {
+    background-color: #F65687;
+}
+
+
+.dark {
+    background-color: #725847;
+}
+
+
+.rock {
+    background-color: #B8A137;
+}
+
+
+.bug {
+    background-color: #A8B720;
+}
+
+
+.ghost {
+    background-color: #6E5896;
+}
+
+
+.steel {
+    background-color: #B9B7CF;
+}
+
+
+.dragon {
+    background-color: #6F38F6;
+}
+
+
+.fairy {
+    background-color: #F9AEC7;
+}
+
+
+.top {
+    width: 100%;
+    padding: 30px 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back {
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.favorite {
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/favorite.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.pokemon-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pokemon {
+    margin: .5rem;
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon .name {
+    color: #fff;
+    margin-bottom: .25rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.pokemon .number {
+    color: #fff;
+    text-align: right;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.pokemon .detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon .detail .types {
+    width: 130px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokemon .detail .types .type {
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: 1rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.pokemon img {
+    padding-top: 20px;
+    max-width: 100%;
+    height: 15rem;
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+    padding: 0 2%;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.info-header {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-header a {
+    text-decoration: none;
+    color: #343434;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.info-header a:hover {
+    transform: 0.5s ease-in-out;
+}
+
+.info-header a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #7582DE;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.info-header a:hover::after {
+    width: 100%;
+}
+
+.info-header a.selected::after {
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background-color: #7582DE;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.detail {
+    width: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+    gap: 35px;
+}
+
+.detail .detail-title {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #B4B8BC;
+}
+
+.detail .detail-data {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #343434;
+}
