@@ -252,6 +252,14 @@ body {
     transition: 0.5s ease-in-out;
 }
 
+.info-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
 .detail {
     width: 150px;
     display: grid;

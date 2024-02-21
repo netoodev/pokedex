@@ -19,7 +19,9 @@
 </head>
 <body>
     <header class="top">
-        <div class="back"></div>
+        <a href="index.html">
+            <div class="back"></div>
+        </a>
         <div class="favorite"></div>
     </header>
     <div class="pokemon-container">
@@ -38,28 +40,33 @@
             <header class="info-header">
                 <nav>
                     <a class="selected" href="">About</a>
-                    <a href="">Base Stats</a>
                 </nav>
             </header>
-            <div class="info-details">
-                <div class="detail">
-                    <span class="detail-title">Species</span>
-                    <span class="detail-data">Seed</span>
-                </div>
-                <div class="detail">
-                    <span class="detail-title">Height</span>
-                    <span class="detail-data">70cm</span>
-                </div>
-                <div class="detail">
-                    <span class="detail-title">Weight</span>
-                    <span class="detail-data">6.9kg</span>
-                </div>
-                <div class="detail">
-                    <span class="detail-title">Abilities</span>
-                    <span class="detail-data">Overgrow, Chlorophyl</span>
+            <div class="info-details" id="pokemonInfo">
+                <div class="details-wrapper">
+                    <div class="detail">
+                        <span class="detail-title">Species</span>
+                        <span class="detail-data">Seed</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-title">Height</span>
+                        <span class="detail-data">70cm</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-title">Weight</span>
+                        <span class="detail-data">6.9kg</span>
+                    </div>
+                    <div class="detail">
+                        <span class="detail-title">Abilities</span>
+                        <span class="detail-data">Overgrow, Chlorophyl</span>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
+
+    <script src="assets/js/pokemon-model.js"></script>
+    <script src="assets/js/poke-api.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
